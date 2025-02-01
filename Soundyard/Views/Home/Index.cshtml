@@ -1,0 +1,45 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Welcome to Soundyard Club</h1>
+        </div>
+    </div>
+
+    @if (User.Identity.IsAuthenticated)
+    {
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Welcome, @User.Identity.Name</h2>
+                <p>Your role: @User.IsInRole("Admin") ? "Administrator" : "User"</p>
+                <p>Agreement: @ViewBag.Agreement</p>
+            </div>
+            <div class="col-md-6">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li>@Html.ActionLink("Go to Dashboard", "Dashboard", "Home")</li>
+                    <li>@Html.ActionLink("View Reports", "Index", "Report")</li>
+                    <li>@Html.ActionLink("Admin Area", "Index", "Admin")</li>
+                </ul>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Register here</h3>
+                <p>@Html.ActionLink("Register now", "Register", "Account")</p>
+            </div>
+        </div>
+    }
+</div>
+
+@section Scripts {
+    <script>
+        
+    </script>
+}
