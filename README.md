@@ -30,26 +30,3 @@ Features
 
     Uses a local SQL Express database named sy_club.
     A database backup is available for easy recovery.
-
-Installation
-1. Clone the project
-
-Clone this project to your local machine:
-
-    git clone https://github.com/YourAccount/soundyard-club.git
-
-2. Set up the database
-
-    Install SQL Express and create a database named sy_club.
-    In appsettings.json, configure the connection string to the database.
-
-3. Running the Application
-
-Once the database and SMTP server are configured, you can run the application using Visual Studio.
-Technologies
-
-1. ASP.NET MVC 5
-2. Bootstrap 4
-3. ASP.NET Identity for authentication and user management
-4. SQL Express for the database
-5. SMTP server for sending activation emails
