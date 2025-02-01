@@ -4,11 +4,11 @@ This project represents the creation of a secure portal for users of the soundya
 
 The project includes the following features:
 
-    User authentication via FBA (Forms-based Authentication) with stored credentials in an SQL database (using ASP.NET Identity).
-    Role management for controlling user permissions.
-    Internal pages (Dashboard, Report, Administration) available only after login.
-    SMTP server for sending activation emails upon registration.
-    Anonymous registration form for new users (first name, last name, email address).
+1. User authentication via FBA (Forms-based Authentication) with stored credentials in an SQL database (using ASP.NET Identity).
+2. Role management for controlling user permissions.
+3. Internal pages (Dashboard, Report, Administration) available only after login.
+4. SMTP server for sending activation emails upon registration.
+5. Anonymous registration form for new users (first name, last name, email address).
 
 Features
 1. FBA Authentication
@@ -36,7 +36,7 @@ Installation
 
 Clone this project to your local machine:
 
-git clone https://github.com/YourAccount/soundyard-club.git
+    git clone https://github.com/YourAccount/soundyard-club.git
 
 2. Set up the database
 
@@ -48,8 +48,8 @@ git clone https://github.com/YourAccount/soundyard-club.git
 Once the database and SMTP server are configured, you can run the application using Visual Studio.
 Technologies
 
-    ASP.NET MVC 5
-    Bootstrap 4
-    ASP.NET Identity for authentication and user management
-    SQL Express for the database
-    SMTP server for sending activation emails
+1. ASP.NET MVC 5
+2. Bootstrap 4
+3. ASP.NET Identity for authentication and user management
+4. SQL Express for the database
+5. SMTP server for sending activation emails
